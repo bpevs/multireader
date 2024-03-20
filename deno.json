@@ -1,14 +1,11 @@
 {
   "compilerOptions": {
     "lib": [
-      "deno.ns",
       "dom",
       "dom.iterable",
       "dom.asynciterable",
       "esnext"
-    ],
-    "jsx": "react-jsx",
-    "jsxImportSource": "npm:solid-js"
+    ]
   },
   "importMap": "import_map.json",
   "fmt": {
@@ -32,7 +29,7 @@
   },
   "tasks": {
     "test": "deno fmt && deno task test:check && deno lint && deno task test:unit",
-    "test:check": "deno check ./src-www/index.tsx",
+    "test:check": "deno check ./src-www/index.ts",
     "test:unit": "deno test -A ./src-www",
     "test:update": "deno test -A -- --update source",
     "build": "cargo tauri android build --debug && deno task open",

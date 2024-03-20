@@ -1,11 +1,21 @@
 <html>
   <head>
-    <script src="dist/preload.js" type="module"></script>
-    <link rel='stylesheet' href='/static/tachyons.css' />
     <link rel='stylesheet' href='/static/index.css' />
   </head>
   <body>
-    <div id="main"></div>
+    <button id="open-book">open book</button>
+    <label for="to-lang">Translate to: </label>
+    <input name="to-lang" id="to-lang" />
+    <label for="api-key">API key:</label>
+    <input name="api-key" id="api-key" />
+    <div id="frame" style="margin: 10px;">
+      <div id="viewer" ></div>
+      <a id="prev" href="#prev" class="arrow">‹</a>
+      <a id="next" href="#next" class="arrow">›</a>
+    </div>
+    <div id="extras">
+      <ul id="highlights"></ul>
+    </div>
     <script src="dist/index.js" type="module"></script>
   </body>
 </html>

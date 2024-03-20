@@ -2,7 +2,6 @@ import type { Format } from 'npm:esbuild'
 import * as esbuild from 'npm:esbuild'
 import { denoPlugins } from 'jsr:@luca/esbuild-deno-loader@0.9.0'
 import { resolve } from 'jsr:@std/path@0.215.0'
-import { solidPlugin } from 'npm:esbuild-plugin-solid'
 
 const [denoResolver, denoLoader] = [...denoPlugins({
   nodeModulesDir: true,
@@ -12,12 +11,10 @@ const [denoResolver, denoLoader] = [...denoPlugins({
 const options = {
   plugins: [
     denoResolver,
-    solidPlugin({ solid: { moduleName: 'npm:solid-js/web' } }),
     denoLoader,
   ],
   entryPoints: [
-    { in: './src-www/index.tsx', out: './index' },
-    { in: './src-www/preload.ts', out: './preload' }
+    { in: './src-www/index.ts', out: './index' },
   ],
   outdir: './src-www/dist',
   bundle: true,

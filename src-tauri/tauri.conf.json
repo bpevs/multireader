@@ -1,15 +1,16 @@
 {
   "app": {
+    "withGlobalTauri": false,
     "security": {
       "csp": null
     },
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
+        "height": 800,
         "resizable": true,
         "title": "Multireader",
-        "width": 800
+        "width": 1000
       }
     ]
   },
