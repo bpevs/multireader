@@ -30,7 +30,7 @@
     ],
     "targets": "all"
   },
-  "identifier": "com.tauri.dev",
+  "identifier": "me.bpev.multireader",
   "productName": "multireader",
   "version": "0.1.0"
 }

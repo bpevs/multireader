@@ -11,7 +11,8 @@
       "jsr:@std/path@0.215.0": "jsr:@std/path@0.215.0",
       "npm:esbuild": "npm:esbuild@0.20.1",
       "npm:esbuild-plugin-solid": "npm:esbuild-plugin-solid@0.5.0_esbuild@0.20.1_solid-js@1.8.14__seroval@1.0.4_@babel+core@7.23.9",
-      "npm:esbuild@0.20": "npm:esbuild@0.20.1"
+      "npm:esbuild@0.20": "npm:esbuild@0.20.1",
+      "npm:solid-js": "npm:solid-js@1.8.14_seroval@1.0.4"
     },
     "jsr": {
       "@luca/esbuild-deno-loader@0.9.0": {

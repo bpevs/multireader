@@ -1,9 +1,7 @@
 import { render } from 'solid-js/web'
 
 function App() {
-  return (
-    <div>hello!</div>
-  )
+  return <div>hello!</div>
 }
 
 const main = document.getElementById('main')
