@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "deno.ns",
+      "dom",
+      "dom.iterable",
+      "dom.asynciterable",
+      "esnext"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "npm:solid-js"
+  },
+  "importMap": "import_map.json",
+  "fmt": {
+    "include": ["src-www/"],
+    "exclude": ["src-www/dist/"],
+    "proseWrap": "preserve",
+    "semiColons": false,
+    "singleQuote": true
+  },
+  "lint": {
+    "include": ["src-www/"],
+    "exclude": ["src-www/dist/"]
+  },
+  "check": {
+    "include": ["src-www/"],
+    "exclude": ["src-www/dist/"]
+  },
+  "test": {
+    "include": ["src-www/"],
+    "exclude": ["src-www/dist/"]
+  },
+  "tasks": {
+    "test": "deno fmt && deno task test:check && deno lint && deno task test:unit",
+    "test:check": "deno check ./src-www/index.tsx",
+    "test:unit": "deno test -A ./src-www",
+    "test:update": "deno test -A -- --update source",
+    "build": "cargo tauri android build --debug && deno task open",
+    "dev": "cargo tauri dev",
+    "start": "cargo tauri android dev",
+    "open": "open 'src-tauri/gen/android/app/build/outputs/apk/universal/debug'"
+  }
+}

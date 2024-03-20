@@ -1,0 +1,36 @@
+{
+  "app": {
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "height": 600,
+        "resizable": true,
+        "title": "Multireader",
+        "width": 800
+      }
+    ]
+  },
+  "build": {
+    "beforeDevCommand": "deno run -A build.ts dev",
+    "beforeBuildCommand": "deno run -A build.ts build",
+    "devUrl": "http://localhost:3000",
+    "frontendDist": "../src-www"
+  },
+  "bundle": {
+    "active": true,
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "targets": "all"
+  },
+  "identifier": "com.tauri.dev",
+  "productName": "multireader",
+  "version": "0.1.0"
+}

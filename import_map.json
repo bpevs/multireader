@@ -1,0 +1,21 @@
+{
+  "imports": {
+    "$/": "./src-www/",
+    "std/": "https://deno.land/std@0.219.0/",
+
+    "solid-js": "npm:solid-js",
+    "solid-js/web": "npm:solid-js/web",
+    "solid-js/router": "npm:@solidjs/router",
+    "solid-js/store": "npm:solid-js/store",
+
+    "solid-js/codemirror": "npm:solid-codemirror",
+    "solid-js/kobalte": "npm:@kobalte/core",
+    "solid-js/motion": "npm:@motionone/solid",
+    "solid-js/use": "npm:solidjs-use",
+
+    "tauri/api": "https://esm.sh/@tauri-apps/api@2.0.0-beta.4",
+    "tauri/api/": "https://esm.sh/@tauri-apps/api@2.0.0-beta.4/",
+    "tauri/plugin-dialog": "https://esm.sh/@tauri-apps/plugin-dialog@2.0.0-beta.2",
+    "tauri/plugin-fs": "https://esm.sh/@tauri-apps/plugin-fs@2.0.0-beta.2"
+  }
+}
